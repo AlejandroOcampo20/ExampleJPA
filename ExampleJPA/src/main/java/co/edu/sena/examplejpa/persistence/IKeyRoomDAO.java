@@ -4,7 +4,6 @@
  */
 package co.edu.sena.examplejpa.persistence;
 
-import co.edu.sena.examplejpa.model.Employee;
 import co.edu.sena.examplejpa.model.KeyRoom;
 import java.util.List;
 
@@ -17,5 +16,5 @@ public interface IKeyRoomDAO {
     public void update (KeyRoom keyRoom)throws Exception;
     public void delete (KeyRoom keyRoom)throws Exception;
     public KeyRoom findByID (Integer id)throws Exception;
-    public List <Employee> finfAll()throws Exception;
+    public List <KeyRoom> finfAll()throws Exception;
 }

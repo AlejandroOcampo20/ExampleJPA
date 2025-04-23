@@ -9,11 +9,11 @@ package co.edu.sena.examplejpa.persistence;
  * @author alejo
  * Objetive: instanciar todos los DAO's creados en la persistencia
  */
-public class DaoFactory {
+public class DAOFactory {
     private static IEmployeeTypeDAO employeeTypeDAO = new EmployeeTypeDAO();
     private static IEmployeeDAO employeeDAO = new EmployeeDAO();
     private static IKeyRoomDAO keyRoomDAO = new KeyRoomDAO();
-    private static IRecordDAO iRecordDAO = new RecordDAO();
+    private static IRecordDAO RecordDAO = new RecordDAO();
 
     public static IEmployeeTypeDAO getEmployeeTypeDAO() {
         return employeeTypeDAO;
@@ -28,7 +28,7 @@ public class DaoFactory {
     }
 
     public static IRecordDAO getiRecordDAO() {
-        return iRecordDAO;
+        return RecordDAO;
     }
     
     

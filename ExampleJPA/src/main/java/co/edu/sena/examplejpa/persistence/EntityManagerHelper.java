@@ -19,9 +19,9 @@ public class EntityManagerHelper {
     private static final Logger logger;
 
     static {
-        emf = Persistence.createEntityManagerFactory("co.edu.sena_ExampleMVCJPA_jar_1.0-SNAPSHOTPU");
+        emf = Persistence.createEntityManagerFactory("co.edu.sena_ExampleJPA_jar_1.0-SNAPSHOTPU");
         threadLocal = new ThreadLocal<EntityManager>();
-        logger = Logger.getLogger("co.edu.sena_ExampleMVCJPA_jar_1.0-SNAPSHOTPU");
+        logger = Logger.getLogger("co.edu.sena_ExampleJPA_jar_1.0-SNAPSHOTPU");
         logger.setLevel(Level.ALL);
     }
 
